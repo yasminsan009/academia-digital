@@ -31,8 +31,6 @@ public class Aluno {
   private String bairro;
 
   private LocalDate dataDeNascimento;
-
-  private String programacao; //frequencia/dias na semana
   
   @OneToMany(mappedBy = "aluno", cascade = CascadeType.REMOVE , fetch = FetchType.LAZY)
   @JsonIgnore
