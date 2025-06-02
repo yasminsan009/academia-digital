@@ -23,4 +23,6 @@ public class Matricula {
   private Aluno aluno;
 
   private LocalDateTime dataDaMatricula = LocalDateTime.now();
+
+   private String programacao; //frequencia/dias na semana
 }
