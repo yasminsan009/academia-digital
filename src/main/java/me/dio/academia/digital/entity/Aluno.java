@@ -32,8 +32,11 @@ public class Aluno {
 
   private LocalDate dataDeNascimento;
 
+  private String programacao; //frequencia/dias na semana
+  
   @OneToMany(mappedBy = "aluno", cascade = CascadeType.REMOVE , fetch = FetchType.LAZY)
   @JsonIgnore
   private List<AvaliacaoFisica> avaliacoes = new ArrayList<>();
+
 
 }
